@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+     margin: 0; padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2129c4;
+}
+
+.container{
+    width: 22rem;
+    background: #fff;
+    border-radius: .5rem;
+    padding: 1.5rem 1.8rem;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container form{
+    margin: 2rem 0 1.2rem;
+}
+
+.container form .row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.container form .row label{
+    margin-bottom: .3rem;
+    font-size: 1.2rem;
+}
+
+.container form :where(textarea, select, button){
+    outline: none;
+    width: 100%;
+    border-radius: .3rem;
+    border: none;
+}
+
+.container form .row textarea{
+    border: .1rem solid #999;
+    font-size: 1rem;
+    resize: none;
+    height: 7rem;
+    padding: .5rem .6rem;
+
+}
+
+.container form .row .outer{
+    border: .1rem solid #999;
+    height: 2.8rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    padding:  0 .6rem;
+}
+
+.container form .row select{
+    font-size: 1rem;
+}
+
+.container form button{
+    margin-top: .6rem;
+    height: 3rem;
+    background: #2129c4;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container form button:hover{
+    background: #5b62ee;
+}
+
+/*media queries*/
+@media(max-width:380px){
+    .container{
+        width: 18rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .container form{
+        margin: 1rem 0 1.2rem;
+    }
+    
+}
+
+@media(max-width:280px){
+    .container{
+        width: 15rem;
+        padding: .7rem 1.2rem;
+    }
+
+    .container h1{
+        font-size: 1.5rem;
+    }
+
+    .container form{
+        margin: 1rem 0 1.2rem;
+    }
+    
+}
+
